@@ -77,7 +77,7 @@ function htmlFila(doc) {
     new URLSearchParams();
   parámetros.append("id", doc.id);
   return ( /* html */
-    `<li class="list-group-item list-group-item-primary">
+    `<li>
       <a class="fila" href=
   "alumno.html?${parámetros}">
         <strong class="primario">
