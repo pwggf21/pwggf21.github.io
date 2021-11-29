@@ -95,8 +95,8 @@ async function htmlFila(doc) {
       <a class="fila conImagen"
           href=
     "usuario.html?${parámetros}">
-        <span class="border">
-          <img src="${img}>
+        <span class="marco">
+          <img src="${img}" alt="50px">
         </span>
         <span class="texto">
           <strong
