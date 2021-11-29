@@ -96,7 +96,7 @@ async function htmlFila(doc) {
           href=
     "usuario.html?${parámetros}">
         <span class="marco">
-          <img src="${img}" width="50px" height="50px">
+          <img src="${img}" width="80px" height="80px">
         </span>
         <span class="texto">
           <strong>
@@ -106,7 +106,7 @@ async function htmlFila(doc) {
           </strong>
           <span>
           <font color="04CEFF">
-              class="secundario">
+              <class="secundario">
             ${alumno}<br>
             ${roles}
            </font>
