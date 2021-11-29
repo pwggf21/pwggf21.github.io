@@ -94,19 +94,57 @@
                 <div class="col-md-6">
                     <div class="full">
                         <form name="forma">
-                        <h1><strong class="cur">ALUMNO</strong></h1>
-                        
+                        <h1><strong class="cur">ALUMNO NUEVO</strong></h1>  
+                        <div class="herramientas">
+                            <button type="button" class="btn btn-warning"><a href="alumno.html">CANCELAR</a></button>
+                        </div>
+                        <div class="herramientas">
+                            <button type="button" class="btn btn-success"><a href="alumno.html">CANCELAR</a></button>
+                        </div>
+
+                        <div class="herramientas">
+                            <p>
+                                <label>
+                                    MATRICULA
+                                    <input name="matricula" type="text" class="form-control" color="white" required>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="herramientas">
+                            <p>
+                                <label>
+                                    NOMBRE
+                                    <input name="nombre" type="text" class="form-control" color="white" required>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="herramientas">
+                            <p>
+                                <label>
+                                    TELÉFONO
+                                    <input name="telefono" type="text" class="form-control" color="white" required>
+                                </label>
+                            </p>
+                        </div>
+
+                        <div class="herramientas">
+                            <p>
+                                <label>
+                                    FECHA
+                                    <input name="fecha" type="date" required>
+                                </label>
+                            </p>
+                        </div>
+
                         <div>
-                            <ul id="lista" class="list-group">
-                                <li class="list-group-item list-group-item-primary">
+                            <ul id="lista" class="lista">
+                                <li>
                                   <mi-progreso>
                                   </mi-progreso>
                                 </li>
                             </ul>
-                        </div>
-                            <br>
-                            <div class="herramientas">
-                            <button type="button" class="btn btn-success"><a href="alumnoNuevo.html">AGREGAR</a></button>
                         </div>
                         </form>
                     </div>
@@ -134,7 +172,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script type="module" src="js/CtrlAlumnos.js"> </script>
+    <script type="module" src="js/CtrlAlumnoNuevo.js"> </script>
 </body>
 
 </html>
