@@ -106,7 +106,6 @@ async function htmlFila(doc) {
           </strong>
           <span>
           <font color="04CEFF">
-              <class="secundario">
             ${alumno}<br>
             ${roles}
            </font>
