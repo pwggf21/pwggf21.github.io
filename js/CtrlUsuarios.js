@@ -97,7 +97,7 @@ async function htmlFila(doc) {
     "usuario.html?${parámetros}">
         <span class="marco">
           <img src="${img}
-            alt="50px">
+            alt="">
         </span>
         <span class="texto">
           <strong
