@@ -98,19 +98,25 @@ async function htmlFila(doc) {
         <span class="marco">
           <img src="${img}" width="80px" height="80px">
         </span>
+     <'/li'>
+     <'li'>
         <span class="texto">
           <strong>
             <font color="04CEFF">
             ${cod(doc.id)}
             </font
           </strong>
+         </span>
+      <'li'>
+      <'li'>
           <span>
           <font color="04CEFF">
             ${alumno}<br>
-            ${roles}
-           </font>
           </span>
-        </span>
+          <span>
+            ${roles}
+           </span>
+           </font>
       </a>
     </li>`);
 }
