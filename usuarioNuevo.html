@@ -1,97 +1,172 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,
-       initial-scale=1.0">
-  <title>Usuario Nuevo</title>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Sesión</title>
+   <!--
+    Carga el núcleo de Firebase
+    JS SDK
+  -->
   <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
-    </script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
-    </script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
-    </script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js">
-    </script>
-  <script src="js/init.js">
+  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
   </script>
-  <script type="module"
-    src="cmp/mi-nav.js">
-    </script>
-  <script type="module"
-    src="cmp/mi-footer.js">
-    </script>
-  <script type="module"
-    src="cmp/mi-progreso.js">
-    </script>
-  <link rel="stylesheet"
-    href="css/estilos.css">
+<!--
+  Agrega el manejo de
+  autenticación.
+-->
+<script
+  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+  </script>
+<!--
+  Agrega el manejo de bases de
+  datos.
+-->
+<script
+  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+  </script>
+<!--
+  Configura la app usando la
+  información del sitio de
+  Firebase.
+-->
+<!-- Agrega el manejo de storage. -->
+<script
+src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js">
+</script>
+<script src="js/init.js"> </script>
+<script type="module" src="cmp/mi-nav.js"> </script>
+<script type="module" src="cmp/mi-footer.js"></script>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<body>
-  <form name="forma">
-    <mi-nav></mi-nav>
-    <header>
-      <h1>Usuario Nuevo</h1>
-      <div class="herramientas">
-        <a href="usuarios.html">
-          Cancelar</a>
-        <button type="submit">
-          Guardar
-        </button>
-      </div>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- end loader -->
+    <!-- header -->
+    <header id="home">
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li class="active"> <mi-nav></mi-nav> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header inner -->
     </header>
-    <p>
-      <label>
-        Cue
-        <input name="cue"
-          type="email" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Avatar
-        <input name="avatar"
-          type="file" required
-          accept=".png,.jpg,.jpeg,.gif">
-      </label>
-    </p>
-    <!--
-      Maneja una asociación a uno.
-    -->
-    <p>
-      <label>
-        Alumno
-        <select
-          name="alumnoId">
-          <option>
-            Cargando…
-          </option>
-        </select>
-      </label>
-    </p>
-    <!--
-      Maneja una asociación a
-      muchos.
-    -->
-    <fieldset>
-      <legend>Roles</legend>
-      <ul id="listaRoles"
-        class="checks">
-        <li>
-          <mi-progreso>
-          </mi-progreso>
-        </li>
-      </ul>
-    </fieldset>
-    <mi-footer></mi-footer>
-  </form>
-  <script type="module"
-    src="js/CtrlUsuarioNuevo.js">
-    </script>
+    <!-- end header -->
+
+
+    <section class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                        <form name="forma">
+                        <h1><strong class="cur">USUARIO NUEVO</strong></h1>  
+                        <div>
+                            <button type="button" class="btn btn-danger"><a href="usuarios.html">CANCELAR</a></button>
+                        </div>
+                        <div class="herramientas">
+                            <p>
+                                <label>
+                                    Cuenta
+                                    <input name="cue" type="email" class="form-control" color="white" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Avatar
+                                    <input name="avatar" type="file" class="form-control" color="white" required accept=".png,.jpg,.jpeg,.gif">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Alumno
+                                        <select name="alumnoId">
+                                            <option>
+                                                Cargando..
+                                            </option>
+                                        </select>
+                                </label>
+                            </p>
+                            <fieldset>
+                                <legend>
+                                    Roles
+                                </legend>
+                                <ul id="listaRoles">
+                                    <li>
+                                        <mi-progreso>
+                                        </mi-progreso>
+                                    </li>
+
+                                </ul>
+                            </fieldset>
+                        <div>
+                            <button type="submit" class="btn btn-success">GUARDAR</button>
+                        </div>
+                  
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- footer -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <p><mi-footer></mi-footer></p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script type="module" src="js/CtrlUsuarioNuevo.js"> </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
