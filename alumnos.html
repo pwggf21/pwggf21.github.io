@@ -41,6 +41,11 @@
 <script type="module" src="cmp/mi-footer.js"></script>
 <script type="module" src="cmp/mi-progreso.js"></script>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/estilos.css">
+
+
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -94,59 +99,27 @@
                 <div class="col-md-6">
                     <div class="full">
                         <form name="forma">
-                        <h1><strong class="cur">ALUMNO NUEVO</strong></h1>  
-                        <div>
-                            <button type="button" class="btn btn-danger"><a href="alumno.html">CANCELAR</a></button>
-                        </div>
+                        <h1><strong class="cur">ALUMNO</strong></h1>
+                            
                         <div class="herramientas">
-                            <p>
-                                <label>
-                                    MATRICULA
-                                    <input name="matricula" type="text" class="form-control" color="white" required>
-                                </label>
-                            </p>
+                            <input name="texto" required placeholder="Mensaje">
+                            <button type="button" class="btn btn-success"><a href="alumnoNuevo.html">AGREGAR</a></button>
                         </div>
-
                         <div>
-                            <p>
-                                <label>
-                                    NOMBRE
-                                    <input name="nombre" type="text" class="form-control" color="white" required>
-                                </label>
-                            </p>
+                            <ul id="lista" class="lista">
+                                <li>
+                                  <mi-progreso>
+                                  </mi-progreso>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div>
-                            <p>
-                                <label>
-                                    TELÉFONO
-                                    <input name="telefono" type="text" class="form-control" color="white" required>
-                                </label>
-                            </p>
-                        </div>
-
-                        <div>
-                            <p>
-                                <label>
-                                    GRUPO
-                                    <input name="grupo" type="text" class="form-control" color="white" required>
-                                </label>
-                            </p>
-                        </div>
-
-                        <div class="herramientas">
-                            <p>
-                                <label>
-                                    FECHA
-                                    <input name="fecha" type="date" required>
-                                </label>
-                            </p>
-                        </div>
-                        <div class="herramientas">
-                            <button type="button" class="btn btn-success"><a href="alumno.html">GUARDAR</a></button>
-                        </div>
-                  
                         </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="full text_align_center">
+                        <img id="avatar" class="slide_img"  alt="Avatar"> 
                     </div>
                 </div>
             </div>
@@ -172,7 +145,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script type="module" src="js/CtrlAlumnoNuevo.js"> </script>
+    <script type="module" src="js/CtrlAlumnos.js"> </script>
 </body>
 
 </html>
